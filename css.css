@@ -5,11 +5,11 @@ body {
 
 .header {
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #586cc2;
 }
 
 .profile-picture-container {
-    background-color: #ccc; /* Change this to your desired background color */
+    background-color: #973e3e; /* Change this to your desired background color */
     padding: 20px;
 }
 
