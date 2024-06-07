@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #F9FFED;
     font-family: Arial, sans-serif;
 }
 
@@ -9,8 +10,10 @@ body {
 }
 
 .profile-picture-container {
-    background-color: #973e3e; /* Change this to your desired background color */
-    padding: 20px;
+    display: inline-block;
+    background-color: #D3E4CD;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .profile-picture {
@@ -49,4 +52,16 @@ body {
 
 .content {
     padding: 20px;
+}
+
+.block {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
