@@ -6,12 +6,12 @@ body {
 
 .header {
     text-align: center;
-    background-color: #586cc2;
+    background-color: #07080c;
 }
 
 .profile-picture-container {
     display: inline-block;
-    background-color: #D3E4CD;
+    background-color: #152cac;
     padding: 10px;
     border-radius: 10px;
 }
