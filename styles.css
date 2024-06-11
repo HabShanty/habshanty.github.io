@@ -25,9 +25,9 @@ body {
 }
 
 .profile-picture {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 500px;
+    height: 300px;
+    border-radius: 25%;
 }
 
 
@@ -98,6 +98,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: fit-content;
 }
 
 footer a {
