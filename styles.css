@@ -50,6 +50,42 @@ body {
 /**** End Navbar ****/
 
 
+/* SideNavbar */
+.sidebar {
+    background-color: #333;
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 4px;
+    margin: 0;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+/**** End SideNavbar ****/
+
+
 /* Header w/ Profile Picture */
 .header {
     display: flex;
@@ -114,37 +150,3 @@ footer a:hover {
 }
 /**** End Footer ****/
 
-/* SideNavbar */
-.sidebar {
-    background-color: #333;
-    width: 200px; /* Adjust width as needed */
-    height: 100vh; /* Full height */
-    position: fixed; /* Fixed position */
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 4px;
-    margin: 0;
-}
-
-.sidebar ul li {
-    width: 100%;
-}
-
-.sidebar ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.sidebar ul li a:hover {
-    background-color: #575757;
-    color: white;
-}
-/**** End SideNavbar ****/
