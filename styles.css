@@ -43,8 +43,9 @@ body {
 /* Header with Profile Picture */
 .header {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
     margin-top: 60px; /* To accommodate the fixed navbar */
 }
 
@@ -52,12 +53,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f26a5;
+    margin-right: 20px; /* Space between the picture and text */
+    background-color: #ee17b8;
     width: 100%;
     max-width: 600px; /* Adjust as needed */
     height: 400px; /* Adjust as needed */
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0;
+    border-radius: 0;
     overflow: hidden;
 }
 
@@ -68,8 +70,8 @@ body {
 }
 
 .header-text {
-    text-align: center;
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 0;
 }
 
 .header-text h1 {
