@@ -20,9 +20,9 @@ body {
 .profile-picture-container {
     display: inline-block;
     background-color: #50998d; /* Adjust background color as needed */
-    padding: 10px;
-    border-radius: 10px;
-    width: 500px; /* Set the desired width */
+    padding: 10px; 
+    border-radius: 0px;
+    width: 100%; /* Set the desired width */
     height: 300px; /* Set the desired height */
     position: relative; /* Ensure links overlay is positioned correctly */
     overflow: hidden; /* Ensure image does not overflow */
