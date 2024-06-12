@@ -17,8 +17,10 @@ body {
 
 /* Navbar */
 .navbar {
+    grid-area: navbar;
     background-color: #333;
-    overflow: hidden;
+    padding: 10px;
+    color: white;
 }
 
 .navbar ul {
@@ -52,13 +54,11 @@ body {
 
 /* SideNavbar */
 .sidebar {
+    grid-area: sidebar;
     background-color: #333;
-    width: 200px; /* Adjust width as needed */
-    height: 100vh; /* Full height */
-    position: fixed; /* Fixed position */
-    top: 0;
-    left: 0;
-    overflow: hidden;
+    color: white;
+    height: 100%;
+    padding-top: 20px;
 }
 
 .sidebar ul {
@@ -132,14 +132,15 @@ body {
 
 /* Footer styles */
 footer {
+    grid-area: footer;
     background-color: rgba(51, 51, 51, 0.5);
     color: white;
     text-align: center;
     padding: 20px 0;
     width: 100%;
     height: 10%;
-    position: fixed;
-    bottom: 0;
+ /*   position: fixed;
+    bottom: 0; */
 }
 footer a {
     color: #4CAF50;
@@ -150,3 +151,20 @@ footer a:hover {
 }
 /**** End Footer ****/
 
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main-content"
+        "sidebar footer";
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
