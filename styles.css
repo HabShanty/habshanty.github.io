@@ -24,6 +24,12 @@ body {
         "sidebar footer";
 }
 
+.main-container {
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-content {
     grid-area: main-content;
     padding: 20px;
@@ -38,8 +44,9 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: #757474;
-    padding: 10px 0;
+    padding: 10px;
     color: white;
+    z-index: 1; /* Ensure navbar stays above other content */
 }
 
 .navbar ul {
