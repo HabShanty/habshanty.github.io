@@ -18,8 +18,8 @@ body {
 /* Navbar */
 .navbar {
     grid-area: navbar;
-    background-color: #333;
-    padding: 10px;
+    background-color: #757474;
+    padding: 10px 0;
     color: white;
 }
 
