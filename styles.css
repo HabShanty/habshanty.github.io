@@ -1,4 +1,4 @@
-/* Main body & content*/
+/* Main body, content & container*/
 
 body {
     margin: 0;
@@ -12,7 +12,26 @@ body {
     margin: 20px auto;
     text-align: center;
 }
-/**** End body & content ****/
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar main-content"
+        "sidebar footer";
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    background-color: #c0f1da;
+    overflow-y: auto; /* Enables scrolling within the main content */
+}
+
+/**** End body, content & containe ****/
 
 
 /* Navbar */
@@ -155,25 +174,6 @@ footer a:hover {
     text-decoration: underline;
 }
 /**** End Footer ****/
-
-
-.container {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    grid-template-areas:
-        "sidebar navbar"
-        "sidebar main-content"
-        "sidebar footer";
-}
-
-.main-content {
-    grid-area: main-content;
-    padding: 20px;
-    background-color: #c0f1da;
-    overflow-y: auto; /* Enables scrolling within the main content */
-}
 
 
 /* Adjust layout for smaller screens */
