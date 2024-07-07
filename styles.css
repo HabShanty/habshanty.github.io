@@ -39,7 +39,11 @@ body {
     overflow-y: auto; /* Enables scrolling within the main content */
 }
 
-/**** End body, content & containe ****/
+.block {
+    margin: 8px;
+}
+
+/**** End body, content & container ****/
 
 
 /* Navbar */
@@ -175,11 +179,12 @@ footer {
     background-color: rgba(26, 42, 55, 0.5); /* Dark Navy Blue with opacity */
     color: #ECF0F1; /* Light Grey */
     text-align: center;
-    padding: 10px 0 10px 0;  /* Top, Right, Bottom, Left */
+    padding: 5px 0 25px 0;  /* Top, Right, Bottom, Left */
     width: 100%;
     height: 10%;
     position: fixed;
     bottom: 0;
+    text-indent:-200px;
 }
 
 footer a {
