@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    background-color: #c0f1da;
+    background-color:#2C3E50;
+    color: #ECF0F1; /* Light Grey */
     font-family: Arial, sans-serif;
 }
 
@@ -19,6 +20,7 @@ body {
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     grid-template-areas:
+    
         "sidebar navbar"
         "sidebar main-content"
         "sidebar footer";
@@ -32,8 +34,8 @@ body {
 
 .main-content {
     grid-area: main-content;
-    padding: 20px;
-    background-color: #c0f1da;
+    padding: 0;
+    background-color: #2C3E50;
     overflow-y: auto; /* Enables scrolling within the main content */
 }
 
@@ -43,10 +45,12 @@ body {
 /* Navbar */
 .navbar {
     grid-area: navbar;
-    background-color: #757474;
+    background-color: #1A2A37; 
+    color: #ECF0F1; /* Light Grey */
     padding: 10px;
-    color: white;
-    z-index: 1; /* Ensure navbar stays above other content */
+    position: relative; /* Adjust positioning */
+    border: 1px solid #34495E;
+   
 }
 
 .navbar ul {  /* Navbar list */
@@ -63,14 +67,14 @@ body {
 
 .navbar ul li a {  /* Navbar links */
     text-decoration: none; /* Remove underline from links */
-    color: white; /* Ensure link text is white */
-    padding: 10px; /* Add padding for better click area */
+    color: #ECF0F1; /* Light Grey */
+    padding: 0; /* Add padding for better click area */
     display: block; /* Ensure each link is a block element */
 }
 
 .navbar ul li a:hover {  /* Navbar hover text */
-    background-color: #ddd;
-    color: black;
+    background-color: #34495E; /* Muted Blue-Grey */
+    color: #1ABC9C; /* Turquoise */
 }
 /**** End Navbar ****/
 
@@ -78,12 +82,12 @@ body {
 /* SideNavbar */
 .sidebar {
     grid-area: sidebar;
-    background-color: #333;
-    color: white;
+    background-color: #1A2A37; /* Dark Navy Blue */
+    color: #ECF0F1; /* Light Grey */
     height: 100%;
     padding-top: 20px;
     overflow-y: auto; /* Enables scrolling within the sidebar */
-   /* position: fixed; */
+    position: sticky; 
 }
 
 .sidebar ul {
@@ -98,15 +102,15 @@ body {
 
 .sidebar ul li a {
     display: block;
-    color: white;
+    color: #ECF0F1; /* Light Grey */
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
 }
 
 .sidebar ul li a:hover {
-    background-color: #575757;
-    color: white;
+    background-color: #34495E; /* Muted Blue-Grey */
+    color: #1ABC9C; /* Turquoise */
 }
 /**** End SideNavbar ****/
 
@@ -115,43 +119,38 @@ body {
 .header {
     display: flex;
     /* flex-direction: column; */
+    background-color:#2C3E50;
     align-items: center;
     justify-content: center;
-    margin-top: 60px; /* To accommodate the fixed navbar */
 }
 
 .profile-picture-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px; /* Space between the picture and text */
-    background-color: #ee17b8;
+    margin-right: 20px;  /* Space between the picture and text, This is useful on Portfolio and Home */
+    background-color: #1A2A37; /* Dark Navy Blue */
     width: 100%;
     max-width: 600px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
-    padding: 0;
-    border-radius: 0;
+    height: 100%; /* Adjust as needed */
     overflow: hidden;
-}
-
-.about-profile-picture-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden; /* Ensures that the image doesn't overflow its container */
-    background-color: #0f26a5; /* Background color for the container */
-}
-
-.about-profile-picture {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the container, preserving aspect ratio */
-    object-position: center;
 }
 
 .profile-picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Hobbies and Interesting Links pages use this div as well as about */
+
+
+.about-profile-picture {
+    width: 100%; /* Ensure the image spans the full width of the container */
+    max-height: 33vh; /* Set the maximum height to 75% of the viewport height or adjust as needed */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    object-position: top; /* Center the image within the container */
+    display: block; /* Ensure the image is displayed as a block element */
 }
 
 .header-text {
@@ -172,8 +171,8 @@ body {
 /* Footer styles */
 footer {
     grid-area: footer;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
+    background-color: rgba(26, 42, 55, 0.5); /* Dark Navy Blue with opacity */
+    color: #ECF0F1; /* Light Grey */
     text-align: center;
     padding: 10px 0 10px 0;  /* Top, Right, Bottom, Left */
     width: 100%;
@@ -181,14 +180,59 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
 footer a {
-    color: #4CAF50;
+    color: #1ABC9C; /* Turquoise */
     text-decoration: none;
 }
 footer a:hover {
     text-decoration: underline;
 }
 /**** End Footer ****/
+
+
+
+/**** Links ****/
+
+
+/* * and *:visited ensure all elements and visited links are initially styled with turquoise (#1ABC9C).
+a:visited specifies that visited links (<a> tags) should change to magenta when visited.
+a:hover retains the hover effect where links underline when hovered over.       */
+
+
+a {
+    color: #1ABC9C; /* Turquoise */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Set link color to magenta when visited */
+a:visited {
+    color: #8E44AD; /* Magenta */
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/****  End Links ****/
+
+
+/**** Experience Div Styles ****/
+
+.experience {
+    margin-bottom: 20px;
+}
+.company {
+    font-weight: bold;
+}
+.role {
+    font-style: italic;
+}
+.date {
+    color: grey;
+}
+/**** End Experience Div Styles ****/
+
 
 
 /* Adjust layout for smaller screens */
