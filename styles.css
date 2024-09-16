@@ -147,6 +147,11 @@ body {
     object-fit: cover;
 }
 
+.QR-picture {
+    max-width: 150px;
+    max-height: 150px;
+}
+
 /* Hobbies and Interesting Links pages use this div as well as about */
 
 
