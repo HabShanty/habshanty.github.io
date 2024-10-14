@@ -1,280 +1,128 @@
-/* Main body, content & container*/
 
-body {
+* {
     margin: 0;
-    background-color:#2C3E50;
-    color: #ECF0F1; /* Light Grey */
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.content {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #28a745;
+    color: white;
     text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #e64a19;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    grid-template-areas:
-    
-        "navbar"
-        "main-content"
-        "footer";
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.main-container {
-    grid-area: main-content;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-content {
-    grid-area: main-content;
-    padding: 0;
-    background-color: #2C3E50;
-    overflow-y: auto; /* Enables scrolling within the main content */
-}
-
-.block {
-    margin: 8px;
-}
-
-/**** End body, content & container ****/
-
-
-/* Navbar */
-.navbar {
-    grid-area: navbar;
-    background-color: #1A2A37; 
-    color: #ECF0F1; /* Light Grey */
-    padding: 10px;
-    position: relative; /* Adjust positioning */
-    border: 1px solid #34495E;
-   
-}
-
-.navbar ul {  /* Navbar list */
-    list-style-type: none; /* Remove default list styling */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Use flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-}
-
-.navbar ul li { /* Navbar list items*/
-    margin: 5px; /* Add margin to space out list items */
-}
-
-.navbar ul li a {  /* Navbar links */
-    text-decoration: none; /* Remove underline from links */
-    color: #ECF0F1; /* Light Grey */
-    padding: 0; /* Add padding for better click area */
-    display: block; /* Ensure each link is a block element */
-}
-
-.navbar ul li a:hover {  /* Navbar hover text */
-    background-color: #34495E; /* Muted Blue-Grey */
-    color: #1ABC9C; /* Turquoise */
-}
-/**** End Navbar ****/
-
-
-/* SideNavbar */
-.sidebar {
-    grid-area: sidebar;
-    background-color: #1A2A37; /* Dark Navy Blue */
-    color: #ECF0F1; /* Light Grey */
-    height: 100%;
-    padding-top: 20px;
-    overflow-y: auto; /* Enables scrolling within the sidebar */
-    position: sticky; 
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 4px;
-    margin: 0;
-}
-
-.sidebar ul li {
-    width: 100%;
-}
-
-.sidebar ul li a {
-    display: block;
-    color: #ECF0F1; /* Light Grey */
+#services {
+    padding: 60px 0;
+    background: #f7f7f7;
     text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
 }
 
-.sidebar ul li a:hover {
-    background-color: #34495E; /* Muted Blue-Grey */
-    color: #1ABC9C; /* Turquoise */
-}
-/**** End SideNavbar ****/
-
-
-/* Header w/ Profile Picture */
-.header {
-    display: flex;
-    /* flex-direction: column; */
-    background-color:#2C3E50;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.profile-picture-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;  /* Space between the picture and text, This is useful on Portfolio and Home */
-    background-color: #1A2A37; /* Dark Navy Blue */
-    width: 100%;
-    max-width: 600px; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
-    overflow: hidden;
-}
-
-.profile-picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.QR-picture {
-    max-width: 150px;
-    max-height: 150px;
-}
-
-/* Hobbies and Interesting Links pages use this div as well as about */
-
-
-.about-profile-picture {
-    width: 100%; /* Ensure the image spans the full width of the container */
-    max-height: 33vh; /* Set the maximum height to 75% of the viewport height or adjust as needed */
-    object-fit: cover; /* Maintain the aspect ratio and cover the container */
-    object-position: top; /* Center the image within the container */
-    display: block; /* Ensure the image is displayed as a block element */
-}
-
-.header-text {
-    text-align: left;
-    margin-top: 0;
-}
-
-.header-text h1 {
-    margin: 0;
-}
-
-.header-text p {
-    margin: 5px 0 0;
-}
-/**** End Header ****/
-
-
-/* Footer styles */
-footer {
-    grid-area: footer;
-    background-color: rgba(26, 42, 55, 0.5); /* Dark Navy Blue with opacity */
-    color: #ECF0F1; /* Light Grey */
-    text-align: center;
-    padding: 5px 0 25px 0;  /* Top, Right, Bottom, Left */
-    width: 100%;
-    height: 10%;
-    position: fixed;
-    bottom: 0;
-    text-indent:-200px;
-}
-
-footer a {
-    color: #1ABC9C; /* Turquoise */
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-/**** End Footer ****/
-
-
-
-/**** Links ****/
-
-
-/* * and *:visited ensure all elements and visited links are initially styled with turquoise (#1ABC9C).
-a:visited specifies that visited links (<a> tags) should change to magenta when visited.
-a:hover retains the hover effect where links underline when hovered over.       */
-
-
-a {
-    color: #1ABC9C; /* Turquoise */
-    text-decoration: none; /* Remove underline from links */
-}
-
-/* Set link color to magenta when visited */
-a:visited {
-    color: #8E44AD; /* Magenta */
-}
-
-/* Hover effect for links */
-a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-/****  End Links ****/
-
-
-/**** Experience Div Styles ****/
-
-.experience {
+#services h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
-.company {
-    font-weight: bold;
+
+.service-item {
+    margin: 20px 0;
 }
-.role {
-    font-style: italic;
+
+#why-choose-us {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
 }
-.date {
-    color: grey;
+
+#why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-/**** End Experience Div Styles ****/
 
+#why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+#why-choose-us ul li {
+    margin: 10px 0;
+}
 
-/* Adjust layout for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-            "navbar"
-            "sidebar"
-            "main-content"
-            "footer";
-    }
+#contact {
+    padding: 60px 0;
+    background: #f7f7f7;
+    text-align: center;
+}
 
-    .sidebar {
-        height: auto;
-        padding-top: 0;
-    }
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.contact-info {
+    margin-bottom: 20px;
+}
 
-    footer {
-        grid-area: footer;
-        background-color: rgba(26, 42, 55, 0.5); /* Dark Navy Blue with opacity */
-        color: #ECF0F1; /* Light Grey */
-        text-align: center;
-        padding: 5px 0 25px 0;  /* Top, Right, Bottom, Left */
-        
-        text-indent:-200px;
-    }
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
