@@ -10,20 +10,29 @@ body {
     line-height: 1.6;
 }
 
+
+/* Header w/ Logo Picture */
+
 header {
-    background: #28a745;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+    background: #d7cfb8;
+    padding: 20px;
 }
 
-header h1 {
-    font-size: 3rem;
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between elements */
+    align-items: center; /* Vertically aligns items */
 }
 
-header p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+.container {
+    flex: 1; /* Ensures both divs take equal space */
+    padding: 10px;
+}
+
+.profile-picture {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
 }
 
 .cta-button {
@@ -32,16 +41,29 @@ header p {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .cta-button:hover {
     background: #e64a19;
 }
+/* End Header */
 
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5rem;
+}
+
+p {
+    color: black;
+    font-size: 1.2rem;
 }
 
 #services {
