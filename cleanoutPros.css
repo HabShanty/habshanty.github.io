@@ -1,4 +1,4 @@
-
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,49 +6,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
 }
-
-
-/* Header w/ Logo Picture */
-
-header {
-    background: #d7cfb8;
-    padding: 20px;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Ensures equal spacing between elements */
-    align-items: center; /* Vertically aligns items */
-}
-
-.container {
-    flex: 1; /* Ensures both divs take equal space */
-    padding: 10px;
-}
-
-.profile-picture {
-    width: 250px; /* Adjust as needed */
-    height: auto;
-    border-radius: 10px;
-}
-
-.cta-button {
-    background: #ff5722;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.cta-button:hover {
-    background: #e64a19;
-}
-/* End Header */
 
 .container {
     width: 90%;
@@ -56,71 +18,150 @@ header {
     max-width: 1200px;
 }
 
-h1 {
-    color: black;
-    font-size: 2.5rem;
+/* Header Section */
+header {
+    background-color: #1A2A37;
+    padding: 15px 20px;
 }
 
-p {
-    color: black;
-    font-size: 1.2rem;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+/* Text Section */
+.text-container h1 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    /* text-align: center; */
+    align-items: center;
+    color: #1ABC9C;
+}
+
+.company-name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #1abc9c;
+    text-shadow: 0 0 10px #1abc9c, 0 0 20px #16a085;
+    text-decoration: underline;
+  }
+
+
+.text-container p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+/* CTA and Phone Section */
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #ECF0F1;
+    font-size: 18px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 12px 25px;
+    background-color: #16a085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #16a085;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px; /* Space between the logo and the text */
+    max-width: 1000px; /* Constrain the width for a neat layout */
+    width: 90%; /* Ensure the layout is responsive */
+}
+
+.services-logo {
+    width: 30%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px; /* Optional: slight rounding */
 }
 
 #services {
+    display: flex;
+    justify-content: center; /* Center the entire section horizontally */
     padding: 60px 0;
-    background: #f7f7f7;
+    background-color: #34495E;
+}
+
+#contact {
+    padding: 60px 0;
+    background-color: #34495E;
     text-align: center;
 }
 
-#services h2 {
-    font-size: 2.5rem;
+h1, h2 {
     margin-bottom: 20px;
+    color: #1ABC9C;
 }
 
 .service-item {
     margin: 20px 0;
 }
-
-#why-choose-us {
-    padding: 60px 0;
-    background: #fff;
-    text-align: center;
+.services-content {
+    max-width: 800px;
+    color: #ECF0F1;
 }
 
-#why-choose-us h2 {
-    font-size: 2.5rem;
+.services-content h2 {
+    color: #1ABC9C;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    text-align: center;
+    color: #1ABC9C;
+}
+
+.service-item p {
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    padding: 60px 0;
+    background-color: #1A2A37;
+    text-align: center;
 }
 
 #why-choose-us ul {
     list-style-type: none;
-    padding: 0;
 }
 
 #why-choose-us ul li {
     margin: 10px 0;
 }
 
-#contact {
-    padding: 60px 0;
-    background: #f7f7f7;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    margin-bottom: 20px;
-}
-
-form {
-    display: inline-block;
-    text-align: left;
-}
-
+/* Form Styles */
 form input, form textarea {
     width: 100%;
     padding: 10px;
@@ -130,7 +171,7 @@ form input, form textarea {
 }
 
 form button {
-    background: #28a745;
+    background-color: #28a745;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -139,12 +180,13 @@ form button {
 }
 
 form button:hover {
-    background: #218838;
+    background-color: #218838;
 }
 
+/* Footer */
 footer {
-    background: #333;
-    color: white;
+    background-color: #1A2A37;
+    color: #ECF0F1;
     text-align: center;
     padding: 20px 0;
 }
