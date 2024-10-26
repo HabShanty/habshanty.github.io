@@ -89,14 +89,14 @@ header {
 /* Services Section */
 .services-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px; /* Space between the logo and the text */
     max-width: 1000px; /* Constrain the width for a neat layout */
     width: 90%; /* Ensure the layout is responsive */
 }
 
 .services-logo {
-    width: 30%; /* Adjust size as needed */
+    width: 50%; /* Adjust size as needed */
     height: auto;
     object-fit: contain;
     border-radius: 10px; /* Optional: slight rounding */
