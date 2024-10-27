@@ -1,0 +1,253 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Section */
+header {
+    background-color: #1A2A37;
+    padding: 15px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+/* Text Section */
+.text-container h1 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    /* text-align: center; */
+    align-items: center;
+    color: #1ABC9C;
+}
+
+.company-name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #1abc9c;
+    text-shadow: 0 0 10px #1abc9c, 0 0 20px #16a085;
+    text-decoration: underline;
+  }
+
+
+.text-container p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+/* CTA and Phone Section */
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-number {
+    font-weight: bold;
+    color: #ECF0F1;
+    font-size: 18px;
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 12px 25px;
+    background-color: #16a085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #16a085;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    gap: 30px; /* Space between the logo and the text */
+    max-width: 1000px; /* Constrain the width for a neat layout */
+    width: 90%; /* Ensure the layout is responsive */
+}
+
+.services-logo {
+    width: 50%; /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px; /* Optional: slight rounding */
+}
+
+#services {
+    display: flex;
+    justify-content: center; /* Center the entire section horizontally */
+    padding: 60px 0;
+    background-color: #34495E;
+}
+
+#contact {
+    padding: 60px 0;
+    background-color: #34495E;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #1ABC9C;
+}
+
+.service-item {
+    margin: 20px 0;
+}
+.services-content {
+    max-width: 800px;
+    color: #ECF0F1;
+}
+
+.services-content h2 {
+    color: #1ABC9C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    text-align: center;
+    color: #1ABC9C;
+}
+
+.service-item p {
+    text-align: center;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    padding: 60px 0;
+    background-color: #1A2A37;
+    text-align: center;
+}
+
+#why-choose-us ul {
+    list-style-type: none;
+}
+
+#why-choose-us ul li {
+    margin: 10px 0;
+}
+
+/* Form Styles */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #1A2A37;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-left h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .header-left p {
+        text-align: center;
+    }
+
+    .cta-button {
+        width: 80%; /* Button expands to fit mobile view */
+        text-align: center;
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: center;
+        text-align: center;  /* Center-align text for better appearance */
+    }
+
+    .services-logo {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    .services-text h2 {
+        font-size: 28px; /* Reduce heading size */
+    }
+
+    .services-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-left h1 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        width: 100%; /* Button fully stretches on smaller phones */
+    }
+    
+    .services-logo {
+        width: 100px; /* Smaller logo for tiny screens */
+    }
+
+    .services-text h2 {
+        font-size: 24px; /* Further reduce heading size */
+    }
+}

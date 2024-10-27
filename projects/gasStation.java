@@ -1,4 +1,4 @@
-//This solution has better time complexity that GPT, but less readability
+//This solution has better time complexity than GPT, but less readability
 class GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         
