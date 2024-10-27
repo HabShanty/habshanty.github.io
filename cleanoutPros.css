@@ -244,7 +244,8 @@ footer {
     }
     
     .services-logo {
-        width: 100px; /* Smaller logo for tiny screens */
+        width: 200px; /* Smaller logo for tiny screens */
+        height: auto;
     }
 
     .services-text h2 {
