@@ -89,6 +89,7 @@ header {
 /* Services Section */
 .services-container {
     display: flex;
+    /*flex-wrap: wrap;*/
     align-items: center;
     gap: 30px; /* Space between the logo and the text */
     max-width: 1000px; /* Constrain the width for a neat layout */
@@ -194,6 +195,26 @@ footer {
 
 /* Media Query for Mobile Screens */
 @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .header-left h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .header-left p {
+        text-align: center;
+    }
+
+    .cta-button {
+        width: 80%; /* Button expands to fit mobile view */
+        text-align: center;
+    }
+
     .services-container {
         flex-direction: column; /* Stack logo and text vertically */
         align-items: center;
@@ -214,6 +235,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .header-left h1 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        width: 100%; /* Button fully stretches on smaller phones */
+    }
+    
     .services-logo {
         width: 100px; /* Smaller logo for tiny screens */
     }
