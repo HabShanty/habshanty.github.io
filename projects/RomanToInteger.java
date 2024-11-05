@@ -38,6 +38,6 @@ class RomanNumeralConverter {
             case 'D': return 500;
             case 'M': return 1000;
         }
-        return -1;
+        return -1;  //For a more robust program receiving this -1 would throw an error code
     }
 }
