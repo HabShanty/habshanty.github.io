@@ -39,11 +39,35 @@ body {
     overflow-y: auto; /* Enables scrolling within the main content */
 }
 
-.block {
-    margin: 8px;
+/**** End body, content & container ****/
+
+
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all children */
 }
 
-/**** End body, content & container ****/
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Optional: Adds spacing between blocks */
+    justify-content: center; /* Center align content */
+}
+
+.portfolio-header {
+    width: 300px;
+    text-align: center;
+
+}
+.portfolio-group {
+    width: 300px; /* Set width for uniformity */
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+
 
 
 /* Navbar */
