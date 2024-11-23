@@ -38,9 +38,10 @@
         <div class="header-text">
             <h1>Thomas Moskal</h1>
             <p>
-                Bachelor of Science - Computer Science from SUNY Oswego <br>
-               <small>For CV pdf copy: <a href="./files/Thomas Moskal Resume.pdf"><u><i>Click Here</i></u></a>.</small>  
+                <!-- Bachelor of Science - Computer Science from SUNY Oswego <br> -->
+               
             </p>
+            <p><small>For CV pdf copy: <a href="./files/Thomas Moskal Resume.pdf"><u><i>Click Here</i></u></a>.</small>  </p>
             <br>
             <!--<p> 
                 To quickly link this page, use the QR code below! <br>
@@ -147,6 +148,33 @@
 
     </div> <!-- main-container -->
 </div> <!-- container -->
-	
+
+
+<script>
+    
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+const text = "Bachelor of Science - Computer Science from SUNY Oswego";
+let index = 0;
+function typeWriter() {
+    const headerText = document.querySelector('.header-text p');
+    if (index < text.length) {
+        headerText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100); // Adjust typing speed here
+    }
+}
+window.onload = typeWriter; // Start typing on page load
+
+</script>
+
 	</body>
 </html>
+

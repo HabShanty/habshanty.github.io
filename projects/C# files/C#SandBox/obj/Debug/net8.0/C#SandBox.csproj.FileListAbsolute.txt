@@ -1,0 +1,15 @@
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\bin\Debug\net8.0\C#SandBox.exe
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\bin\Debug\net8.0\C#SandBox.deps.json
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\bin\Debug\net8.0\C#SandBox.runtimeconfig.json
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\bin\Debug\net8.0\C#SandBox.dll
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\bin\Debug\net8.0\C#SandBox.pdb
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.AssemblyInfoInputs.cache
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.AssemblyInfo.cs
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.csproj.CoreCompileInputs.cache
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.sourcelink.json
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.dll
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\refint\C#SandBox.dll
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.pdb
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\C#SandBox.genruntimeconfig.cache
+C:\Users\Habor\Desktop\CS classes\Oswego\Spring 2022\CSC 344\habshanty.github.io\projects\C# files\C#Sandbox\obj\Debug\net8.0\ref\C#SandBox.dll

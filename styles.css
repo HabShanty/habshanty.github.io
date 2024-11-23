@@ -41,7 +41,7 @@ body {
 
 /**** End body, content & container ****/
 
-
+/**** Portfolio page formatting ****/
 
 .portfolio-container {
     display: flex;
@@ -67,8 +67,7 @@ body {
     box-sizing: border-box;
 }
 
-
-
+/**** Portfolio page formatting End****/
 
 /* Navbar */
 .navbar {
